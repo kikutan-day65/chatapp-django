@@ -57,7 +57,11 @@ ROOT_URLCONF = 'discodeLike.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+    
+            # tell django that we have a specific template folder
+            BASE_DIR / 'templates' 
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
